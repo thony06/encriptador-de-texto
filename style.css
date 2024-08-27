@@ -1,0 +1,128 @@
+*{
+    background: #F3F5FC;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 150%;
+    
+}
+.logo{
+    padding: 1% 0% 0% 5%;
+}
+.main{
+    display: flex;
+    padding: 1% 5%;
+    gap: 100px;
+    flex-direction: row;
+}
+.main_textarea{
+    display: flex;
+    flex-direction: column;
+}
+.text-area{
+    width: 70%;
+    border: none;
+    color: #0A3871;
+    margin-top: 2px;
+    text-transform: lowercase;
+    height: 8.6rem;
+    gap: 40px;
+}
+::placeholder{
+    color: #0A3871 ;
+}
+.text-area:focus{
+    outline:none;
+}
+
+.mensaje:focus{
+    outline: none;
+}
+.botones{
+    display: flex;
+    gap: 20px;
+    
+}
+.btn-desencriptar{
+    width: 80%;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    font-size: 1rem;
+    
+}
+.btn-desencriptar:hover{
+    background-color: #c3c0c7;
+}
+.btn-encriptar{
+    width: 80%;
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.btn-encriptar:hover{
+    background-color: #c3c0c7;
+}
+.desec{
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    align-items: center;
+   
+}
+.mensaje{
+    
+    width: 30% 20%;
+    background: white;
+    background-image: url("/imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+     
+}
+
+.copiar{
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    font-size: 1rem;
+    position: absolute;
+    width: 20%;  
+
+}
+.copiar:hover{
+    background-color: #c3c0c7;
+}
+.informacion{
+    color: #495057;
+    font-size: 18px;
+}
+.footer{
+    background-color: #0A3871;
+    padding: 1px;
+    color: #0b070f;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+@media (max-width: 1000px){
+    .main{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .botones{
+        width: auto;
+    }
+    .copiar{
+        margin-top: -20%;
+        margin-right: 80%;
+        width: auto;
+    }
+    
+}
